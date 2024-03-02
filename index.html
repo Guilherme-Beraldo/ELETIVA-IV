@@ -4,10 +4,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site IFOOD</title>
+    <title>Delivery de Comida e Mercado</title>
+
+    
 </head>
 
-<body>
-    
+<body onload="window.alert('Seja bem vindo!')">
+    <p>Hello world!</p>
+    <input type="text" id="valor">
+    <button id="enviar">Enviar</button>
+
+    <script>
+
+       document.getElementById("enviar") .addEventListener("click", mudarValor);
+
+       function mudarValor(){
+        document.querySelector("#valor").value = "Novo conteúdo"
+       }
+    </script>
 </body>
+
 </html>

@@ -45,6 +45,19 @@ $r->get('/categoria/inserir', 'Php\Primeiroprojeto\Controllers\CategoriaControll
 //rota para salvar 
 $r->post('/categoria/novo', 'Php\Primeiroprojeto\Controllers\CategoriaController@novo');
 
+//rota para o INDEX de categoria
+$r->get('/categoria/{acao}/{status}', 'Php\Primeiroprojeto\Controllers\CategoriaController@index');
+
+$r->get('/categoria', 'Php\Primeiroprojeto\Controllers\CategoriaController@index');
+
+$r->get('/categoria/alterar/id/{id}', 'Php\Primeiroprojeto\Controllers\CategoriaController@alterar');
+
+$r->get('/categoria/excluir/id/{id}', 'Php\Primeiroprojeto\Controllers\CategoriaController@excluir');
+
+$r->post('/categoria/editar', 'Php\Primeiroprojeto\Controllers\CategoriaController@editar');
+
+$r->post('/categoria/deletar', 'Php\Primeiroprojeto\Controllers\CategoriaController@deletar');
+
 //rota para salvar 
 $r->post('/pessoa/novo', 'Php\Primeiroprojeto\Controllers\PessoaController@novo');
 

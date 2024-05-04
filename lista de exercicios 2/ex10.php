@@ -3,8 +3,6 @@
 $peso = $_POST['peso'];
 $altura = $_POST['altura'];
 
-define ("anoAtual", 2024);
-
 function calcularImc ($peso, $altura) {
    $imc = $peso / ($altura * $altura);
 

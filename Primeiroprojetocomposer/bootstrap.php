@@ -82,6 +82,20 @@ $r->post('/escola/novo', 'Php\Primeiroprojeto\Controllers\EscolaController@novo'
 //chamando o formulario para inserir veiculo
 $r->get('/escola/inserir', 'Php\Primeiroprojeto\Controllers\EscolaController@inserir');
 
+//rota para o INDEX de categoria
+$r->get('/escola/{acao}/{status}', 'Php\Primeiroprojeto\Controllers\EscolaController@index');
+
+$r->get('/escola', 'Php\Primeiroprojeto\Controllers\EscolaController@index');
+
+$r->get('/escola/alterar/id/{id}', 'Php\Primeiroprojeto\Controllers\EscolaController@alterar');
+
+$r->get('/escola/excluir/id/{id}', 'Php\Primeiroprojeto\Controllers\EscolaController@excluir');
+
+$r->post('/escola/editar', 'Php\Primeiroprojeto\Controllers\EscolaController@editar');
+
+$r->post('/escola/deletar', 'Php\Primeiroprojeto\Controllers\EscolaController@deletar');
+
+
 
 #ROTAS
 

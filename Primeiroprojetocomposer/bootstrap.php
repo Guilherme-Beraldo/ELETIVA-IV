@@ -73,16 +73,16 @@ $r->get('/veiculo/inserir', 'Php\Primeiroprojeto\Controllers\VeiculoController@i
 //rota para salvar 
 $r->post('/produto/novo', 'Php\Primeiroprojeto\Controllers\ProdutosController@novo');
 
-//chamando o formulario para inserir veiculo
+//chamando o formulario para inserir produto
 $r->get('/produto/inserir', 'Php\Primeiroprojeto\Controllers\ProdutosController@inserir');
 
 //rota para salvar 
 $r->post('/escola/novo', 'Php\Primeiroprojeto\Controllers\EscolaController@novo');
 
-//chamando o formulario para inserir veiculo
+//chamando o formulario para inserir escola
 $r->get('/escola/inserir', 'Php\Primeiroprojeto\Controllers\EscolaController@inserir');
 
-//rota para o INDEX de categoria
+//rota para o INDEX de escolas
 $r->get('/escola/{acao}/{status}', 'Php\Primeiroprojeto\Controllers\EscolaController@index');
 
 $r->get('/escola', 'Php\Primeiroprojeto\Controllers\EscolaController@index');
@@ -94,6 +94,47 @@ $r->get('/escola/excluir/id/{id}', 'Php\Primeiroprojeto\Controllers\EscolaContro
 $r->post('/escola/editar', 'Php\Primeiroprojeto\Controllers\EscolaController@editar');
 
 $r->post('/escola/deletar', 'Php\Primeiroprojeto\Controllers\EscolaController@deletar');
+
+//rota para o INDEX de produtos
+$r->get('/produtos/{acao}/{status}', 'Php\Primeiroprojeto\Controllers\ProdutosController@index');
+
+$r->get('/produtos', 'Php\Primeiroprojeto\Controllers\ProdutosController@index');
+
+$r->get('/produtos/alterar/id/{id}', 'Php\Primeiroprojeto\Controllers\ProdutosController@alterar');
+
+$r->get('/produtos/excluir/id/{id}', 'Php\Primeiroprojeto\Controllers\ProdutosController@excluir');
+
+$r->post('/produtos/editar', 'Php\Primeiroprojeto\Controllers\ProdutosController@editar');
+
+$r->post('/produtos/deletar', 'Php\Primeiroprojeto\Controllers\ProdutosController@deletar');
+
+//rota para o INDEX de pessoas
+$r->get('/pessoa/{acao}/{status}', 'Php\Primeiroprojeto\Controllers\PessoaController@index');
+
+$r->get('/pessoa', 'Php\Primeiroprojeto\Controllers\PessoaController@index');
+
+$r->get('/pessoa/alterar/id/{id}', 'Php\Primeiroprojeto\Controllers\PessoaController@alterar');
+
+$r->get('/pessoa/excluir/id/{id}', 'Php\Primeiroprojeto\Controllers\PessoaController@excluir');
+
+$r->post('/pessoa/editar', 'Php\Primeiroprojeto\Controllers\PessoaController@editar');
+
+$r->post('/pessoa/deletar', 'Php\Primeiroprojeto\Controllers\PessoaController@deletar');
+
+//rota para o INDEX de veiculos
+$r->get('/veiculos/{acao}/{status}', 'Php\Primeiroprojeto\Controllers\VeiculoController@index');
+
+$r->get('/veiculos', 'Php\Primeiroprojeto\Controllers\VeiculoController@index');
+
+$r->get('/veiculos/alterar/id/{id}', 'Php\Primeiroprojeto\Controllers\VeiculoController@alterar');
+
+$r->get('/veiculos/excluir/id/{id}', 'Php\Primeiroprojeto\Controllers\VeiculoController@excluir');
+
+$r->post('/veiculos/editar', 'Php\Primeiroprojeto\Controllers\VeiculoController@editar');
+
+$r->post('/veiculos/deletar', 'Php\Primeiroprojeto\Controllers\VeiculoController@deletar');
+
+
 
 
 

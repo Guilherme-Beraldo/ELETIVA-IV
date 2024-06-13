@@ -61,9 +61,9 @@ class PessoaController {
         $pessoa = new Pessoa($_POST['id'], $_POST['nome'], $_POST['idade']);
         $pessoaDAO = new PessoaDAO();
         if ($pessoaDAO->alterar($pessoa)){
-            header("location: /escola/alterar/true");
+            header("location: /pessoa/alterar/true");
         } else {
-            header("location: /escola/alterar/false");
+            header("location: /pessoa/alterar/false");
         }
         
     }

@@ -5,6 +5,7 @@ namespace Php\Primeiroprojeto\Models\DAO;
 use Php\Primeiroprojeto\Models\Domain\Escola;
 
 class EscolaDAO {
+    private $pdo;
 
     private Conexao $conexao;
 
